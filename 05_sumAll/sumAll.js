@@ -1,15 +1,15 @@
-const sumAll = function(...args) {
-    let minNum = 0;
-    let maxNum = 0;
-    args.forEach(item => {
-        if (item < 0 || item.typeOf != Number){
-            return 'ERROR'
-        }
-        else if (args[0] > args[1]){
-            minNum = args[1]
-            maxNum = args[0]
-        }
-    })
+const sumAll = function(a,b) {
+    let minNum = a;
+    let maxNum = b;
+    // args.forEach(item => {
+    //     if (item < 0 || item.typeOf != Number){
+    //         return 'ERROR'
+    //     }
+    //     else if (args[0] > args[1]){
+    //         minNum = args[1]
+    //         maxNum = args[0]
+    //     }
+    // })
         return theSumming(minNum, maxNum);
 };
 
