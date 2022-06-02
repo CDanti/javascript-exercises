@@ -4,6 +4,9 @@ describe('sumAll', () => {
   test('sums numbers within the range', () => {
     expect(sumAll(1, 4)).toEqual(10);
   });
+  test('sums numbers within another range', () => {
+    expect(sumAll(7,14)).toEqual(84);
+  });
   test.skip('works with large numbers', () => {
     expect(sumAll(1, 4000)).toEqual(8002000);
   });
