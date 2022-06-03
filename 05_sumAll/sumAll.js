@@ -1,16 +1,17 @@
 const sumAll = function(a,b) {
     let minNum = a;
     let maxNum = b;
-    // args.forEach(item => {
-    //     if (item < 0 || item.typeOf != Number){
-    //         return 'ERROR'
-    //     }
-    //     else if (args[0] > args[1]){
-    //         minNum = args[1]
-    //         maxNum = args[0]
-    //     }
-    // })
+    if (a <= 0 || b <= 0 || typeof a != Number || typeof b != Number){
+        return "ERROR";
+    }
+    else if (a>b){
+        minNum = b;
+        maxNum = a;
+        theSumming(minNum, maxNum)
+    }
+    else{
         return theSumming(minNum, maxNum);
+    }
 };
 
 function theSumming(minNum, maxNum){
@@ -24,27 +25,13 @@ function theSumming(minNum, maxNum){
 // Do not edit below this line
 module.exports = sumAll;
 
-// const sumAll = function(a, b) {
-//     minNum = Math.min(a, b);
-//     maxNum = Math.max(a, b);
-//         if (minNum < 0 || minNum.typeOf != Number){
-//             return 'ERROR'
-//         }
-//     let final = 0;
-//     for (i = minNum; i < maxNum + 1; i++){
-//         // x = minNum + i;
-//         final += i;
-//     };
-//     return minNum;
+// if (a <= 0 || b <= 0){
+//     return "ERROR"
 // };
-
-// function theSumming(minNum, maxNum){
-//     let final = 0;
-//     for (i = min; i < maxNum + 1; i++){
-//         final += i;
-//     };
-//     return final;
-// }
-
-// // Do not edit below this line
-// module.exports = sumAll;
+// if (typeof a != Number || typeof b != Number){
+//     return "ERROR"
+// };
+// if (a>b){
+//     minNum = b;
+//     maxNum = a;
+// };
