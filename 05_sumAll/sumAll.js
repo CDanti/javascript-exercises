@@ -7,7 +7,7 @@ const sumAll = function(a,b) {
     else if (a>b){
         minNum = b;
         maxNum = a;
-        theSumming(minNum, maxNum)
+        return theSumming(minNum, maxNum)
     }
     else{
         return theSumming(minNum, maxNum);
