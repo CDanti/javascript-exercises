@@ -1,7 +1,7 @@
 const sumAll = function(a,b) {
     let minNum = a;
     let maxNum = b;
-    if (a <= 0 || b <= 0 || typeof a != Number || typeof b != Number){
+    if (a <= 0 || b <= 0 || typeof a != "number" || typeof b != "number"){
         return "ERROR";
     }
     else if (a>b){
